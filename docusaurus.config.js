@@ -1,19 +1,19 @@
 module.exports = {
   title: 'Coding Thoughts',
-  tagline: 'Old Timer Coding Rants',
+  tagline: 'Old Timer Rants',
   url: 'https://khaledhikmat.github.io',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'khaledhikmat', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  projectName: 'khaledhikmat', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'My Site',
+      title: 'Khaled Hikmat',
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        alt: 'Site Logo',
+        src: 'img/chalk.jpg',
       },
       items: [
         {
@@ -24,7 +24,7 @@ module.exports = {
         },
         {to: 'blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/khaledhikmat',
           label: 'GitHub',
           position: 'right',
         },

@@ -7,7 +7,7 @@ author_image_url: https://avatars1.githubusercontent.com/u/3119726?s=400&u=09089
 tags: [Azure Functions]
 ---
 
-I started with this [documentation page](https://docs.microsoft.com/en-us/azure/azure-functions/durable-functions-install) to learn about Azure durable Functions. I wanted to know if I can build a way to implement actors in Azure Functions. Actors Programming Model is pretty interesting and I did some work on it [here](http://khaledhikmat.github.io/posts/2016-12-15-service-fabric-fundamentals), [here](http://khaledhikmat.github.io/posts/2016-12-02-service-fabric-basics) and [here](http://khaledhikmat.github.io/posts/2017-01-10-service-fabric-notes) using [Azure Service Fabric](https://azure.microsoft.com/en-us/services/service-fabric/) before.
+I started with this [documentation page](https://docs.microsoft.com/en-us/azure/azure-functions/durable-functions-install) to learn about Azure durable Functions. I wanted to know if I can build a way to implement actors in Azure Functions. Actors Programming Model is pretty interesting and I did some work on it before.
 
 Following the Azure Functions sample instructions mentioned in the above link, I quickly got up and running. However, I wanted to answer the following questions about actors in Azure Functions:
 

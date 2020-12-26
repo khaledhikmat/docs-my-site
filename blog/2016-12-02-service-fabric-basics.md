@@ -11,7 +11,7 @@ Service Fabric is a cool technology from Microsoft! It has advanced features tha
 
 For the purpose of this demo, we are going to develop a very basic guest executable service written as a console app. We will use very basic application and service manifests and PowerShell script to deploy to Service Fabric and show how Service Fabric monitors services, reports their health and allows for upgrade and update. 
 
-The source code for this post is available [here](https://github.com/khaledhikmat/service-fabric-basics). Most of the code and ideas are credited to Jeff Richter of the Service Fabric Team.
+The source code for this post is available [here](/blog/2016/12/02/service-fabric-basics). Most of the code and ideas are credited to Jeff Richter of the Service Fabric Team.
 
 ## Guest Service  
 

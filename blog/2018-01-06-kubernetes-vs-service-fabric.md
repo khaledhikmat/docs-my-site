@@ -30,7 +30,7 @@ In 2017, k8s became an industry standard. Every Cloud vendor offers full support
 
 Given this, it became obvious that if any business is planning to adopt Microservices as a developmemt strategy, they are most likely thinking about employing Kubernetes. Managed services offered by many Cloud vendors such as Azure AKS makes this decison a lot easier as dvelopers no longer have to worry about provisioning or maintaining k8s clusters.  
 
-Besides the huge developer and industry support that it is currently receiving, K8s is a joy to work with. Deployments can be described in yaml or json and thrown at the cluster so it can make sure that the desired state is realized. Please refer to [this post](2018-01-04-netpp-docker-k8s) for more information. 
+Besides the huge developer and industry support that it is currently receiving, K8s is a joy to work with. Deployments can be described in yaml or json and thrown at the cluster so it can make sure that the desired state is realized. Please refer to [this post](/blog/2018/01/04/netapp-docker-k8s) for more information. 
 
 Not sure about these:
 - Can k8s create singletons?
@@ -38,7 +38,7 @@ Not sure about these:
 
 #### Service Fabric:
 
-In my opinion, one of the most differentiating factor for Service Fabric is its developer-friendly programming model. It supports reliable stateless, stateful and actor models in a powerful yet abstracted way which makes programming in Service Fabric safe and easy. Please refer to earlier posts [here](2016-12-15-service-fabric-fundamentals) and [here](2017-01-10-service-fabric-notes) for more information. 
+In my opinion, one of the most differentiating factor for Service Fabric is its developer-friendly programming model. It supports reliable stateless, stateful and actor models in a powerful yet abstracted way which makes programming in Service Fabric safe and easy. Please refer to earlier posts [here](/blog/2016/12/15/service-fabric-fundamentals) and [here](/blog/2017/01/10/service-fabric-notes) for more information. 
 
 In addition, Service Fabric supports different ways to host code:
 
@@ -64,7 +64,7 @@ One of the major setbacks for Service Fabric (or at least the public version tha
 
 There are also a couple of things that can be improved:
 - Service Fabric relies on XML documents to describe services and configuration.
-- Reliance on Visual Studio although it is possible to do things in Service Fabric without Visual Studio as demonstrated [here](2016-12-02-service-fabric-basics) 
+- Reliance on Visual Studio although it is possible to do things in Service Fabric without Visual Studio as demonstrated [here](/blog/2016/12/02/service-fabric-basics) 
 
 ## Future
 

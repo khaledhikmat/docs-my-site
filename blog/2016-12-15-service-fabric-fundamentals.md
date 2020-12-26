@@ -31,7 +31,7 @@ The solution source code consists of 4 different projects:
 
 Please note:
 
-- I created the solution using VS 2015 Service Fabric template. But actually the projects are regular projects that include Service Fabric NuGet packages. The only project that is quite specific to Service Fabric is the app project i.e. `RateAggregatorApp` ...but as demonstrated in a [previous post](../posts/2016-12-02-service-fabric-basics), the app manifests and packaging can be easily generated manually.
+- I created the solution using VS 2015 Service Fabric template. But actually the projects are regular projects that include Service Fabric NuGet packages. The only project that is quite specific to Service Fabric is the app project i.e. `RateAggregatorApp` ...but as demonstrated in a [previous post](/blog/2016/12/02/service-fabric-basics), the app manifests and packaging can be easily generated manually.
 - The ASP.NET Code template in Service Fabric is still in preview. I noticed some odd stuff about it:
 	- The template assumes that you are building stateless services! To create Stateful services using the ASP.NET template, manual intervention have to take place which I will note in this post
 	-  The useful `ServiceEventSource.cs` class is not included in the generated project. So if you want to use ETW logging, you must create this file manually (copy it from another SF project)
@@ -480,7 +480,7 @@ The `RatesService` code will then make sure of this parameter to contact the ins
     
 ### Deployment
 
-**This PowerShell script assumes that you used Visual Studio to generate the Service Fabric app package info (right-click the Service Fabric App and select `Package`) or you built the app package manually as demonstrated in a previous [post](../posts/2016-12-02-service-fabric-basics). The created package directory is expected to have the following format `v1.0.0` where 1.0.0 is the version number**
+**This PowerShell script assumes that you used Visual Studio to generate the Service Fabric app package info (right-click the Service Fabric App and select `Package`) or you built the app package manually as demonstrated in a previous [post](/blog/2016/12/02/service-fabric-basics). The created package directory is expected to have the following format `v1.0.0` where 1.0.0 is the version number**
 
 This PowerShell script copies the package to the cluster, registers the app type and creates two name app instances (i.e. Contoso and Fabrican). In each app instance, create two services: Web Service as a front-end and Rates service as a back-end. 
 

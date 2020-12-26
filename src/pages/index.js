@@ -8,39 +8,40 @@ import styles from './styles.module.css';
 
 const features = [
   {
-    title: 'Easy to Use',
+    title: 'Kubernetes vs. Service Fabric',
     imageUrl: 'img/undraw_docusaurus_mountain.svg',
+    blogUrl: 'blog/2018/01/06/kubernetes-vs-service-fabric',
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        A prediction on the future of Microsoft Service Fabric.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: '.NET Core, Docker and Kubernetes',
     imageUrl: 'img/undraw_docusaurus_tree.svg',
+    blogUrl: 'blog/2018/01/04/netapp-docker-k8s',
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Check out how you can use .NET Core in Kubernetes
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Actors in Serverless',
     imageUrl: 'img/undraw_docusaurus_react.svg',
+    blogUrl: 'blog/2017/12/27/durable-functions',
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Model actors in Azure Functions.
       </>
     ),
   },
 ];
 
-function Feature({imageUrl, title, description}) {
+function Feature({imageUrl, blogUrl, title, description}) {
   const imgUrl = useBaseUrl(imageUrl);
+  const blgUrl = useBaseUrl(blogUrl);
   return (
     <div className={clsx('col col--4', styles.feature)}>
       {imgUrl && (
@@ -48,7 +49,11 @@ function Feature({imageUrl, title, description}) {
           <img className={styles.featureImage} src={imgUrl} alt={title} />
         </div>
       )}
-      <h3>{title}</h3>
+      {blgUrl && (
+        <a href={blgUrl}>
+          <h3>{title}</h3>
+        </a>
+      )}
       <p>{description}</p>
     </div>
   );
@@ -71,8 +76,8 @@ function Home() {
                 'button button--outline button--secondary button--lg',
                 styles.getStarted,
               )}
-              to={useBaseUrl('docs/')}>
-              Get Started
+              to={useBaseUrl('blog/tags/')}>
+              Check Blog Posts
             </Link>
           </div>
         </div>
